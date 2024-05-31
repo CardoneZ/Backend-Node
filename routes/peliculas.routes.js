@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const peliculas = require('../controllers/peliculas.controller')
+const Authorize = require('../middlewares/auth.middleware');
 
 //GET: api/peliculas
 router.get('/', peliculas.getAll);
